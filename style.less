@@ -1,0 +1,27 @@
+/*
+ * @Author: zhaoyuyang
+ * @Date: 2019-06-04 15:20:41
+ * @Last Modified by: zhaoyuyang
+ * @Last Modified time: 2019-06-05 16:10:42
+ */
+.Marquee {
+  padding-left: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+  :global(.Marquee-content) {
+    width: max-content;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
